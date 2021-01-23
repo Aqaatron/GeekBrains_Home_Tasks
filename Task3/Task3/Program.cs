@@ -15,8 +15,10 @@ namespace Task3
             int user_number = int.Parse(Console.ReadLine());
 
             if (user_number % 2 == 0)
+
                 Console.WriteLine("Введёное число чётное");
             else
+
                 Console.WriteLine("Введёное число нечётное");
 
             Console.Read();
