@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfValueTupleOfStringBoolean xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ValueTupleOfStringBoolean>
+    <Item1>ghbd</Item1>
+    <Item2>false</Item2>
+  </ValueTupleOfStringBoolean>
+  <ValueTupleOfStringBoolean>
+    <Item1>Сделать дз              [x]</Item1>
+    <Item2>true</Item2>
+  </ValueTupleOfStringBoolean>
+</ArrayOfValueTupleOfStringBoolean>

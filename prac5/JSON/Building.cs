@@ -4,26 +4,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace example
+namespace JSON
 {
-    public class Buildings
+    [Serializable]
+    public class Building
     {
        
-        public int Floors { get; }
+        public int Floors { get; set; }
 
        
-        public int Entrances { get; }
+        public int Entrances { get; set; }
 
-       
-        public bool IsHeatable { get; set; }
+        private bool IsHeatable { get; set; }
 
         public string Adress { get; set; }
 
-        
-        public Buildings(int floors, int entrances)
+        public Building()
+        {
+
+        }
+        public Building(int floors, int entrances)
         {
             Floors = floors;
             Entrances = entrances;
+            
         }
 
       
@@ -38,7 +42,7 @@ namespace example
             Console.WriteLine("Please come in!");
         }
 
-        public void ChangeAdress (string NewAdress)
+        public void ChangeAdress(string NewAdress)
         {
             Adress = NewAdress;
 

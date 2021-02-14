@@ -13,7 +13,7 @@ namespace Task2
         {
             string filename = "startup.txt";
 
-            File.AppendAllText( filename, Convert.ToString( DateTime.Now.ToLongTimeString() ) + "\n");
+            File.AppendAllText( filename, Convert.ToString( DateTime.Now.ToLongTimeString() ) + "\n" );
 
            
         }
