@@ -8,7 +8,7 @@ namespace task4
 {
     class Program
     {
-        static double Fibonachi (int n)
+        static double Fibonachi(int n)
         {
             if (n == 0)
 
@@ -28,7 +28,7 @@ namespace task4
 
             int n = Convert.ToInt16(Console.ReadLine());
 
-            
+
 
             Console.WriteLine($"Число Фибоначи под номером n : {Fibonachi(n)}");
 

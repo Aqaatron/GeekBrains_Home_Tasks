@@ -12,6 +12,8 @@ namespace task2
 
         static void Main(string[] args)
         {
+            Console.WriteLine("Введите последовательность чисел через пробел: ");
+
             string numbers = Console.ReadLine();
 
             double sum = 0; ;
@@ -22,7 +24,7 @@ namespace task2
             {
                  sum = sum + Convert.ToDouble(i);
             }
-            Console.WriteLine(sum);
+            Console.WriteLine("Сумма чисел: " + sum);
 
             Console.ReadLine();
         }

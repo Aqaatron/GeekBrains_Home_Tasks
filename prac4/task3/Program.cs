@@ -18,15 +18,15 @@ namespace task3
     {
         static void GetSeason(int num_of_month, out Seasons op)
         {
-            if (num_of_month < 4)
+            if ((num_of_month  == 12) || (num_of_month == 1) || (num_of_month == 2))
 
                 op = Seasons.Winter;
 
-            else if ((num_of_month > 3) && (num_of_month < 7))
+            else if ((num_of_month == 3) || (num_of_month == 4) || (num_of_month == 5))
 
                 op = Seasons.Spring;
 
-            else if ((num_of_month > 6) && (num_of_month < 10))
+            else if ((num_of_month == 6) || (num_of_month == 7) || (num_of_month == 8))
 
                 op = Seasons.Summer;
             else
@@ -59,7 +59,7 @@ namespace task3
         {
             Seasons cur_season;
 
-            Console.Write("Введите номер месяца");
+            Console.WriteLine("Введите номер месяца");
 
             int num_of_month = Convert.ToInt16(Console.ReadLine());
 
@@ -67,7 +67,7 @@ namespace task3
 
             Get_rus_season(ref cur_season, out string cur_rus_season);
 
-            Console.WriteLine(cur_rus_season);
+            Console.Write(cur_rus_season);
 
             Console.ReadLine();
         }
